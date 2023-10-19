@@ -2,17 +2,12 @@
 //code for the table "prices/size/flavor"
 
 
-let froyoFlavors = {
-  availableFlavors: ["Strawberry","Chocolate","Coffee","Vanilla"],
-  specialSale:true,
-  price: 5,
-}
-console.table(froyoFlavors)
+
   
 
 //prompt 
 
-const inputString = prompt ( "Enter your order seperated by commas ',' Our flavors are", froyoFlavors.availableFlavors,)
+const inputString = prompt ( "Enter your order seperated by commas ',' ")
 
 
 let flavors = inputString.split (',')
@@ -22,28 +17,20 @@ for (let i = 0; i < flavors.length; i++){
   const ord = flavors[i];
   const order = parseInt(ord);
   orders.push (order);
- 
 }
-console.log(`You have given ${howMany(flavors)}`);
 
-
-let flavorsOrdered=[]
-for (i = 0; i < flavors.length; i++){
-  if (flavors[i]<flavorsOrdered){
-  flavorsOrdered=flavors[i];}
-
-if (specialSale = true)
- console.log(froyoFlavors.price * flavors.length)};
-
- function howMany(flavors){
-  (flavors)
-  let flavorsOrdered=[]
-  flavors= [0]
-  for (let i = 0; i<flavorsOrdered.length;i++)
-    if (flavors<flavorsOrdered[i]){
-      flavors+=flavorsOrdered[i]};
-    return flavors
+const froyo = {
+  flavors: ["chocolate","vanilla","coffee","strawberry","greentea"],
+  price: 5
 }
-howMany(flavors)
-console.table (flavors)
 
+console.table(froyo)
+
+function howManyOfEach(flavors){(flavors)
+  let numberOf=[]
+  for (const key in froyo)
+  for (let i = 0; i < flavors.length;i++)
+    if (flavors[i]=numberOf){
+      numberOf=flavors[i]
+    }
+}
