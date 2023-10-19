@@ -14,6 +14,7 @@ console.table(froyoFlavors)
 
 const inputString = prompt ( "Enter your order seperated by commas ',' Our flavors are", froyoFlavors.availableFlavors,)
 
+
 let flavors = inputString.split (',')
 
 const orders = [];
@@ -23,26 +24,26 @@ for (let i = 0; i < flavors.length; i++){
   orders.push (order);
  
 }
-console.log(flavors)
+console.log(`You have given ${howMany(flavors)}`);
 
 
-
-
+let flavorsOrdered=[]
 for (i = 0; i < flavors.length; i++){
+  if (flavors[i]<flavorsOrdered){
+  flavorsOrdered=flavors[i];}
+
 if (specialSale = true)
  console.log(froyoFlavors.price * flavors.length)};
 
-
-let flavorsOrdered=(froyoFlavors)
-for (i = 0; i < froyoFlavors.length;i++){froyoFlavors[i]>flavorsOrdered
-  flavorsOrdered = froyoFlavors[i];
-}
-function howMany(flavors){
+ function howMany(flavors){
   (flavors)
+  let flavorsOrdered=[]
   flavors= [0]
-  for (let i = 0; i<flavors.length;i++)
-    if (flavors<flavors[i])
-      flavors=flavors[i]
+  for (let i = 0; i<flavorsOrdered.length;i++)
+    if (flavors<flavorsOrdered[i]){
+      flavors+=flavorsOrdered[i]};
     return flavors
 }
-howMany()
+howMany(flavors)
+console.table (flavors)
+
