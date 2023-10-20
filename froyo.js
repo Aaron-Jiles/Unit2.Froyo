@@ -7,45 +7,48 @@
 
 //prompt 
 
-const inputString = prompt ( "Enter your order seperated by commas ',' ")
+let inputString = prompt ( "Enter your order seperated by commas ',' ")
 
+console.log (inputString)
+console.log (inputString.split (','))
 
-let flavors = inputString.split (',')
-
-const orders = [];
-for (let i = 0; i < flavors.length; i++){
-  const ord = flavors[i];
-  const order = parseInt(ord);
-  orders.push (order);
+function createorder(str){
+  const flavors = str.split (',')
 }
 
 const froyo = {
-  flavors: ["chocolate","vanilla","coffee","strawberry","greentea"],
-  price: 5
 }
 
-console.table(froyo)
+for (let i = 0; i<flavors.length;i++){  let orderFlavor = flavors[i]
 
-function ordersFlavors(flavors){
-  (flavors)
-      let order=[]
-        for (let i = 0;i <flavors.length;i++)
-          if (flavors[i]<order){
-            order=flavors[i]}
-        console.log (orders)
+if (orderFlavor in order){
+ order[orderFlavor]++
 }
-  for (const key in froyo)
-    {
-      froyo.numberOf= []
-    }
-console.table (froyo)
+else{ order[newFlavors]=1
 
-  function numberOfEach(flavors){(flavors)
-  let number=froyo.numberOf
-    for (let i=0;i<flavors.length;i++)
-      if (flavors[i]<number)
-        number=flavors[i]
-  }
-  for (const key in froyo) 
-      if (froyo.numberOf > 0)
-       froyo.numberOf =[orders]
+}
+  return order
+}
+console.log (order)
+
+
+// console.table(froyo)
+
+// function getFlavor(orders){
+//   (orders)
+//   orders=[0]
+//     for (let i = 0;i<flavors.length;i++)
+//       if (orders=flavors[i])
+//       orders=flavors[i]
+//     return orders
+   
+// }
+// for (const key in froyo){
+//     if (orders===froyo.flavors)
+//  froyo.amount=[]
+// }
+
+// console.table(froyo)
+// //console.log (flavors)
+
+  
